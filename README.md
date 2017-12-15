@@ -1,2 +1,9 @@
-# css3animation
-css3 animation
+webpack + es6 开发环境
+================
+
+### 如何使用
+
+运行下面的命令，在打开的页面中查看使用说明。
+
+    $ npm start
+
