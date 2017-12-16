@@ -56,7 +56,7 @@ var webpackConfig = {
             require.resolve('react-hot-loader/patch'),
             require.resolve('react-dev-utils/webpackHotDevClient'),
             require.resolve('react-error-overlay')
-        ].concat(pkg.vendor || [])
+        ]
     }),
     output: {
         path: paths.appBuild,
