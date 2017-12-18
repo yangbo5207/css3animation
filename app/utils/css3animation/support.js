@@ -1,12 +1,3 @@
-// requestAnimationFrame
-// var requestAnimationFrames = [
-//   'requestAnimationFrames',
-//   'mozRequestAnimationFrame',
-//   'webkitRequestAnimationFrame',
-//   'msRequestAnimationFrame',
-//   'oRequestAnimationFrame'
-// ]
-
 // animation 特性值
 // var animations = [ 'animation', 'WebkitAnimation',  'MozAnimation', 'OAnimation', 'msAnimation']
 
@@ -56,7 +47,6 @@ export const getCssPrefix = () => {
 };
 
 export const getCapitalPrefix = () => {
-    let prefix = '';
     for (var i = 0; i < captialPrefix.length; i++) {
         let n = 'requestAnimationFrame';
         if (captialPrefix[i] !== '') {
