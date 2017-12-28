@@ -99,3 +99,12 @@ export const cancelFrame =
     window.mozCancelRequestAnimationFrame ||
     window.msCancelRequestAnimationFrame ||
     clearTimeout;
+
+export const getAnimationEnd = () => {
+    const prefix = getCapitalPrefix();
+    if (prefix) {
+        return `${getCapitalPrefix()}AnimationEnd`;
+    }
+
+    return 'animationend';
+};

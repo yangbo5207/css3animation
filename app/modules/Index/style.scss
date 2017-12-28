@@ -30,6 +30,19 @@
     }
 }
 
+.flyTopIn {
+    animation-name: flyTopIn;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+.flyTopOut {
+    animation-name: flyTopOut;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+
 @keyframes fadein {
     from {
         opacity: 0;
@@ -45,5 +58,23 @@
     }
     to {
         opacity: 0;
+    }
+}
+
+@keyframes flyTopIn {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(150px);
+    }
+}
+
+@keyframes flyTopOut {
+    from {
+        transform: translateX(150px);
+    }
+    to {
+        transform: translateX(0);
     }
 }

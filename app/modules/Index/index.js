@@ -1,4 +1,5 @@
-import animate from 'css-animation';
+import animate from 'utils/css3animation';
+// import animate from 'css-animation';
 import './style.scss';
 
 var node = document.querySelector('.anibox');
@@ -6,13 +7,15 @@ var btn = document.querySelector('.btn');
 
 var show = true;
 
+var i = 0;
+
 btn.onclick = function() {
-    if (!show) {
-        node.style.visibility = 'visible';
-    }
-    animate(node, `fade-${show ? 'leave' : 'enter'}`, function() {
-        console.log('fade-enter end.');
-        node.style.visibility = show ? 'hidden' : 'visible';
-        show = !show;
+    animate(node, { enter: 'flyTopIn', leave: 'flyTopOut' }, function() {
+        console.log('hahahah' + i++);
     });
+};
+
+const test = {
+    enter: 'enter',
+    out: 'outer'
 };
