@@ -1,5 +1,4 @@
-import animate from 'utils/css3animation';
-// import animate from 'css-animation';
+import animate from 'css3animation';
 import './style.scss';
 
 var node = document.querySelector('.anibox');

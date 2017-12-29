@@ -27,7 +27,8 @@ glob.sync(resolveApp('app/!(_)*.js?(x)'))
 var alias = {
     components: resolveApp('app/components'),
     modules: resolveApp('app/modules'),
-    utils: resolveApp('app/utils')
+    utils: resolveApp('app/utils'),
+    css3animation: resolveApp('css3animation')
 }
 
 // config after eject: we're in ./config/

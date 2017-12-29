@@ -1,5 +1,5 @@
 import './style.scss';
-import animate from 'utils/css3animation';
+import animate from 'css3animation';
 
 var node = document.querySelector('.anibox');
 var btn = document.querySelector('.btn');

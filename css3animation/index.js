@@ -1,4 +1,4 @@
-import { getAnimationEnd, getStyle, setStyle } from './support';
+import { getAnimationEnd, getStyle, setStyle } from 'css3support';
 
 const animationend = getAnimationEnd();
 
