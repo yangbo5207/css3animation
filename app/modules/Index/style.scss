@@ -2,32 +2,7 @@
     width: 100px;
     height: 100px;
     background: orange;
-}
-
-.fade-enter {
-    opacity: 0;
-    animation-duration: 0.3s;
-    animation-fill-mode: both;
-    animation-timing-function: ease;
-    animation-play-state: paused;
-
-    &-active {
-        animation-name: fadein;
-        animation-play-state: running;
-    }
-}
-
-.fade-leave {
-    opacity: 1;
-    animation-duration: 0.3s;
-    animation-fill-mode: both;
-    animation-timing-function: ease;
-    animation-play-state: paused;
-
-    &-active {
-        animation-name: fadeout;
-        animation-play-state: running;
-    }
+    visibility: hidden;
 }
 
 .flyTopIn {
@@ -61,20 +36,42 @@
     }
 }
 
+// @keyframes flyTopIn {
+//     from {
+//         transform: translateX(0);
+//     }
+//     to {
+//         transform: translateX(150px);
+//     }
+// }
+
+// @keyframes flyTopOut {
+//     from {
+//         transform: translateX(150px);
+//     }
+//     to {
+//         transform: translateX(0);
+//     }
+// }
+
 @keyframes flyTopIn {
     from {
         transform: translateX(0);
+        opacity: 0;
     }
     to {
         transform: translateX(150px);
+        opacity: 1;
     }
 }
 
 @keyframes flyTopOut {
     from {
         transform: translateX(150px);
+        opacity: 1;
     }
     to {
         transform: translateX(0);
+        opacity: 0;
     }
 }

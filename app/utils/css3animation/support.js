@@ -108,3 +108,22 @@ export const getAnimationEnd = () => {
 
     return 'animationend';
 };
+
+export const getStyle = (elem, attr) => {
+    return window.getComputedStyle
+        ? window.getComputedStyle(elem, null)[attr]
+        : elem.currentStyle(attr) || elem.style[attr];
+};
+
+export const setStyle = (elem, options) => {
+    if (type(options) == 'object') {
+        for (let key in options) {
+            if (Object.prototype.hasOwnProperty.call(options, key)) {
+                elem.style[key] = options[key];
+            }
+        }
+        return true;
+    }
+
+    return false;
+};
