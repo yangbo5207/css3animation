@@ -1,0 +1,54 @@
+.anibox {
+    width: 100px;
+    height: 100px;
+    background: orange;
+}
+
+.enter {
+    animation-name: flyTopIn;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-timing-function: linear;
+}
+.leave {
+    animation-name: flyTopOut;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeout {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes flyTopIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes flyTopOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
